@@ -38,19 +38,26 @@ body {
     font-size: 1.8rem;
 }
 
-/* Số điện thoại */
+/* Nút gọi điện */
 a[href^="tel"] {
     display: block;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: #0040cc;
+    color: white;
+    background-color: #0040cc;
+    padding: 15px 28px;
+    margin: 20px auto;
+    width: fit-content;
+    border-radius: 50px;
     text-decoration: none;
-    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.2s;
 }
 
 a[href^="tel"]:hover {
-    text-decoration: underline;
+    background-color: #0033aa;
+    transform: scale(1.05);
 }
 
 /* Nội dung chính */
@@ -105,7 +112,8 @@ ul li {
     }
 
     a[href^="tel"] {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
+        padding: 12px 18px;
     }
 
     .content {
@@ -120,6 +128,7 @@ ul li {
     }
 
     a[href^="tel"] {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        padding: 10px 15px;
     }
 }
